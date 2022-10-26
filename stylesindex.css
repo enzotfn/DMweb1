@@ -10,6 +10,16 @@ body {
     --primary-800:#102587;
     --primary-900:#0a196f;
 
+    --secondary-100:#E0E9F4;
+    --secondary-200:#C3d4e9;
+    --secondary-300:#90a3bf;
+    --secondary-400:#596780;
+    --secondary-500:#1a202c;
+    --secondary-600:#131825;
+    --secondary-700:#0d121f;
+    --secondary-800:#080c19;
+    --secondary-900:#040815;
+
     background: #F6F7F9;
 }
 
@@ -30,7 +40,7 @@ body {
 }
 .menu {
     background: #FFFFFF;
-    border: 1px solid rgba(195,212,233,0.4)
+    border: 1px solid rgba(195,212,233,0.4);
 }
 .button {
     font-weight: 600;
@@ -79,7 +89,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    gap: 20px;
+    padding: 34px 64px;
 }
 .popular p {
     font-weight: 600;
@@ -89,7 +99,43 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0px 58px 0px 0px;
-    gap: 8px;
     border-radius: 4px;
+}
+.card {
+    width: 300px;
+    height: fit-content;
+
+    background: white;
+    border-radius: 10px;
+    padding: 24px;
+}
+.card h1 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--secondary-500);
+    display: flex;
+    align-items: center;
+}
+.card h2 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--secondary-300);
+
+    display: flex;
+    align-items: center;
+}
+.card img {
+    padding: 50px 28px;
+    width: 248px;
+}
+.card h3 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--secondary-300);
+
+    display: flex;
+    align-items: center;
 }

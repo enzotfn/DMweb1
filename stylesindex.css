@@ -191,7 +191,8 @@ a:link {
         justify-content: center;
     }
     .card {
-        width: 330px;
+        width: 100%;
+        min-width: 350px;
         flex-direction: row;
     }
     .card h1 {
@@ -215,6 +216,8 @@ a:link {
     }
     .spec {
         flex-direction: column;
+        height: 74px;
+        width: fit-content;
     }
     .gas {
         gap: 4px;
@@ -225,5 +228,11 @@ a:link {
     .places {
         gap: 4px;
     }
-    /* manque : aligner l'image voiture et les specs*/
+    .contenu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap:65px;
+        flex-direction: row;
+    }
 }

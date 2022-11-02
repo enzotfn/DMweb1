@@ -81,6 +81,7 @@ body {
     background: white;
     border-radius: 10px;
     padding: 24px;
+    width: 60%;
 }
 .contenu {
     padding: 32px 32px;
@@ -102,10 +103,17 @@ body {
     align-items: center;
     padding: 0px 0px 10px 0px;
 }
+.ligne {
+    display: flex;
+    flex-direction: row;
+    gap:32px;
+    justify-content: space-between;
+}
 .class {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    width: 100%;
 }
 input {
     background: white;
@@ -117,6 +125,7 @@ input {
     align-items: flex-start;
     padding: 16px 32px;
     gap: 10px;
+    width: 100%;
 }
 input::placeholder {
     font-weight: 400;

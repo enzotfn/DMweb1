@@ -77,14 +77,25 @@ body {
     background: var(--primary-500);
     opacity: 40%;
 }
+.infos {
+    display: flex;
+    width: 80%;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 32px;
+}
 .infoprinc {
     background: white;
     border-radius: 10px;
     padding: 24px;
-    width: 60%;
+    width: 100%;
+    min-width: 475px;
 }
 .contenu {
     padding: 32px 32px;
+    display: flex;
+    gap: 32px;
+    flex-direction: row;
 }
 .contenu h1 {
     font-weight: 700;
@@ -101,7 +112,15 @@ body {
 
     display: flex;
     align-items: center;
-    padding: 0px 0px 10px 0px;
+}
+.contenu h3 {
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--secondary-500);
+
+    display: flex;
+    align-items: center;
+    padding: 32px 0px 0px 0px;   
 }
 .ligne {
     display: flex;
@@ -109,13 +128,32 @@ body {
     gap:32px;
     justify-content: space-between;
 }
-.class {
+.entree {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
 }
+.demientr {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    padding: 0px 16px 0px 0px;
+}
 input {
+    background: white;
+    border: 1px solid var(--secondary-400);
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 16px 32px;
+    gap: 10px;
+    width: 100%;
+}
+select {
     background: white;
     border: 1px solid var(--secondary-400);
     border-radius: 10px;
@@ -140,4 +178,80 @@ label {
     font-weight: 600;
     font-size: 16px;
     align-items: center;
+}
+.card {
+    background: white;
+    border-radius: 10px;
+    width: 40%;
+    height: fit-content;
+    padding: 24px;
+}
+.card h1 {
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--secondary-500);
+
+    display: flex;
+    align-items: center;
+}
+.card h2 {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--secondary-300);
+
+    display: flex;
+    align-items: center;
+
+    padding: 4px 0px 24px 0px;
+}
+.voiture {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 24px;
+}
+.voiture img {
+    width: 116px;
+}
+.voiture p {
+    font-weight: 700;
+    font-size: 32px;
+    color: var(--secondary-500);
+
+    display: flex;
+    align-items: center;
+}
+.line {
+    border: 1px solid var(--secondary-100);
+    margin: 24px 0px 32px 0px;
+}
+.prix {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--secondary-300);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sub {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 0px 24px 0px;
+}
+.sub h1 {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--secondary-300);
+}
+.sub h2 {
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--secondary-500);
+    
+    display: flex;
+    align-items: center;
+    padding: 0px 0px 0px 0px;
 }

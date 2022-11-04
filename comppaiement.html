@@ -14,6 +14,8 @@
     <div class="menu">
         <p>Page Composants paiement</p>
     </div>
+    <button class="button secondarybutton">Test</button>
+    <button class="button secondarybutton" disabled>Test</button>
     <div class="contenu">
         <div class="infos">
             <div class="infoprinc">
@@ -54,39 +56,35 @@
                 </div>
             </div>
             <div class="infoprinc">
-                <h1>Infos</h1>
+                <h1>Checkbox</h1>
                 <h2>Merci de remplir</h2>
-                <h3>Test</h3>
-                <div class="ligne">
-                    <div class="entree">
-                        <label for="name">Champs 1</label>
-                        <input type="text" id="name" required placeholder="Ecrire ici">
+                <div class="validationfin">
+                    <div class="check">
+                        <input type="checkbox" id="c1" required>
+                        <label for="c1">Test Checkbox 1</label>
                     </div>
-                    <div class="entree">
-                        <label for="numero">Champs 2</label>
-                        <input type="number" id="numero" required placeholder="0102030405">
-                    </div>
-                </div>
-                <div class="ligne">
-                    <div class="entree">
-                        <label for="date">Date</label>
-                        <input type="date" id="date" required>
-                    </div>
-                    <div class="entree">
-                        <label for="heure">Heure</label>
-                        <input type="time" id="numero" required>
+                    <div class="check">
+                        <input type="checkbox" id="c2" required>
+                        <label for="c2">Test Checkbox 2</label>
                     </div>
                 </div>
-                <h3>Demi ligne</h3>
-                <div class="ligne">
-                    <div class="demientr">
-                        <label for="deroulant">Deroulant</label>
-                        <select name="deroulant" id="deroulant" required>
-                            <option value="">Séléctionner un choix</option>
-                            <option value="1">Choix 1</option>
-                            <option value="2">Choix 2</option>
-                            <option value="3">Choix 3</option>
-                        </select>    
+                <button class="button primarybutton">Louer</button>
+            </div>
+            <div class="infoprinc">
+                <h1>Paiement</h1>
+                <h2>blablablapaie</h2>
+                <div class="paiement">
+                    <div class="cb">
+                        <div class="checkcb">
+                        <input type="radio" name="methodepaiement" id="cb">
+                        <label for="cb">Carte crédit</label>
+                        </div>
+                        <div id="contenucb" class="ligne">
+                            <div class="entree">
+                                <label for="numcb">num cb</label>
+                                <input type="number" id="numcb" required>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -106,6 +104,22 @@
             <div class="sub">
                 <h1>Taxes</h1>
                 <h2>0€</h2>
+            </div>
+            <div class="entree">
+                <label for="codepromo">Code</label>
+                <input type="text" id="code" placeholder="XXXXXX">
+            </div>
+            <div class="boutonpromo">
+                <button class="button secondarybutton">Appliquer</button>
+            </div>
+            <div class="total">
+                <div class="totaltext">
+                    <h1>Prix total</h1>
+                    <h3>Prix blablabla</h3>
+                </div>
+                <div class="prixtot">
+                    <p>80€</p>
+                </div>
             </div>
         </div>
     </div>

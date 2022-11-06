@@ -357,20 +357,29 @@ label {
     display: flex;
     flex-direction: row;
 }
-.cb label {
+.checkcb label {
     display: flex;
     padding: 0px 0px 0px 8px;
 }
-#cb {
+.paiement input[type="radio"] {
     display: flex;
     width: fit-content;
     justify-content: flex-start;
     border: 1.5px solid var(--secondary-300);
 }
-#cb:checked ~ #contenucb {
-    display: flex;
-    /* piste : https://jsfiddle.net/LLornfn8/ */
+#cb:checked ~ .contenucb {
+    display: block;
+    padding: 8px 0px 0px 0px;
+    /* piste : https://jsfiddle.net/LLornfn8/ + ca marche pas c'est pas pris en compte*/
 }
-#contenucb {
-    display: none;
+.autre {
+    display: flex;
+    flex-direction: row;
+    background: var(--secondary-100);
+    border-radius: 10px;
+    padding: 24px;
+}
+.autre label {
+    display: flex;
+    padding: 0px 0px 0px 8px;
 }

@@ -169,7 +169,7 @@ body {
     width: 50%;
     padding: 0px 16px 0px 0px;
 }
-input {
+input:not([type="radio"]){
     background: white;
     border: 1px solid var(--secondary-400);
     border-radius: 10px;
@@ -334,6 +334,7 @@ label {
     padding: 0px 0px;
 }
 .check input {
+    width: -moz-fit-content;
     width: fit-content;
     margin: 0px 22px 0px 0px;
     border: 1.5px solid var(--primary-300);
@@ -347,30 +348,25 @@ label {
     gap: 24px;
 }
 .cb {
-    display: flex;
-    flex-direction: column;
     background: var(--secondary-100);
     border-radius: 10px;
     padding: 24px;
 }
-.checkcb {
-    display: flex;
-    flex-direction: row;
+.paiement input[type="radio"] {
+    justify-content: flex-start;
+    width: -moz-fit-content;
+    width: fit-content;
+    border: 1.5px solid var(--secondary-300);
 }
-.checkcb label {
-    display: flex;
+#labelcb {
     padding: 0px 0px 0px 8px;
 }
-.paiement input[type="radio"] {
-    display: flex;
-    width: fit-content;
-    justify-content: flex-start;
-    border: 1.5px solid var(--secondary-300);
+.contenucb {
+    display: none;
 }
 #cb:checked ~ .contenucb {
     display: block;
     padding: 8px 0px 0px 0px;
-    /* piste : https://jsfiddle.net/LLornfn8/ + ca marche pas c'est pas pris en compte*/
 }
 .autre {
     display: flex;
@@ -380,6 +376,5 @@ label {
     padding: 24px;
 }
 .autre label {
-    display: flex;
     padding: 0px 0px 0px 8px;
 }

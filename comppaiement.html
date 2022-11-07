@@ -39,7 +39,7 @@
                     </div>
                     <div class="entree">
                         <label for="heure">Heure</label>
-                        <input type="time" id="numero" required>
+                        <input type="time" id="heure" required>
                     </div>
                 </div>
                 <h3>Demi ligne</h3>
@@ -75,10 +75,8 @@
                 <h2>blablablapaie</h2>
                 <div class="paiement">
                     <div class="cb">
-                        <div class="checkcb">
                         <input type="radio" name="methodepaiement" id="cb">
-                        <label for="cb">Carte crédit</label>
-                        </div>
+                        <label for="cb" id="labelcb">Carte crédit</label>
                         <div class="contenucb" id="contenucb">
                             <div class="ligne">
                                 <div class="entree">
@@ -87,7 +85,7 @@
                                 </div>
                                 <div class="entree">
                                     <label for="expdate">Date d'expiration</label>
-                                    <input type="month" required>
+                                    <input type="month" id="expdate" required>
                                 </div>
                             </div>
                             <div class="ligne">

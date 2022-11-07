@@ -95,10 +95,8 @@
                 <h2>Merci de renseigner vos informations de paiement</h2>
                 <div class="paiement">
                     <div class="cb">
-                        <div class="checkcb">
-                            <input type="radio" name="methodepaiement" id="cb">
-                            <label for="cb">Carte de crédit</label>
-                        </div>
+                        <input type="radio" name="methodepaiement" id="cb">
+                        <label for="cb" id="labelcb">Carte crédit</label>
                         <div class="contenucb" id="contenucb">
                             <div class="ligne">
                                 <div class="entree">
@@ -107,7 +105,7 @@
                                 </div>
                                 <div class="entree">
                                     <label for="expdate">Date d'expiration</label>
-                                    <input type="month" required>
+                                    <input type="month" id="expdate" required placeholder="mm/aa">
                                 </div>
                             </div>
                             <div class="ligne">

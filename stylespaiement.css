@@ -378,3 +378,32 @@ label {
 .autre label {
     padding: 0px 0px 0px 8px;
 }
+@media screen and (max-width: 830px) 
+{
+    .contenu {
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+    .infos {
+        width: 100%;
+    }
+    .card {
+        width: 100%;
+    }
+    .ligne {
+        flex-direction: column;
+        gap: 0px;
+    }
+    .line {
+        margin: 24px 0px 16px 0px;
+    }
+    .sub {
+        padding: 0px 0px 12px 0px;
+    }
+    .card label {
+        padding: 0px 0px 12px 0px;
+    }
+    .boutonpromo {
+        padding: 12px 0px 12px 0px;
+    }
+}

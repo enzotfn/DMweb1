@@ -352,6 +352,9 @@ label {
     border-radius: 10px;
     padding: 24px;
 }
+.cb img {
+    float: right;
+}
 .paiement input[type="radio"] {
     justify-content: flex-start;
     width: -moz-fit-content;
@@ -375,6 +378,9 @@ label {
     border-radius: 10px;
     padding: 24px;
 }
+.autre {
+    float: right;
+}
 .autre label {
     padding: 0px 0px 0px 8px;
 }
@@ -384,11 +390,47 @@ label {
         justify-content: center;
         flex-direction: column-reverse;
     }
+    .infoprinc {
+        min-width: 240px;
+    }
     .infos {
         width: 100%;
     }
+    .infos h1 {
+        font-size: 16px;
+    }
+    .infos h2 {
+        font-size: 12px;
+    }
     .card {
         width: 100%;
+    }
+    .card h1 {
+        font-size: 16px;
+    }
+    .card h2 {
+        font-size: 12px;
+    }
+    .voiture p {
+        font-size: 20px;
+    }
+    .sub h1 {
+        font-size: 12px;
+    }
+    .sub h2 {
+        font-size: 16px;
+    }
+    .card .entree label {
+        padding: 0px 0px 12px 0px;
+    }
+    .total h1 {
+        font-size: 16px;
+    }
+    .total h3 {
+        font-size: 12px;
+    }
+    .total p {
+        font-size: 20px;
     }
     .ligne {
         flex-direction: column;
@@ -405,5 +447,36 @@ label {
     }
     .boutonpromo {
         padding: 12px 0px 12px 0px;
+    }
+    .entree label {
+        font-size: 12px;
+        padding: 24px 0px 12px 0px;
+    }
+    .demientr {
+        width: 100%;
+        padding: 0px 0px;
+    }
+    .demientr label {
+        font-size: 12px;
+        padding: 24px 0px 12px 0px;
+    }
+    #cb:checked ~ .contenucb {
+        padding: 0px 0px 0px 0px;
+    }
+    .validationfin {
+        margin: 24px 0px 20px 0px;
+    }
+    .validationfin label {
+        font-size: 12px;
+        color: #1F2544;
+    }
+    .validationfin input {
+        margin: 0px 16px 0px 0px;
+    }
+    .check {
+        background: var(--secondary-100);
+        border-radius: 10px;
+        padding: 25px 18px;
+        width: 100%;
     }
 }

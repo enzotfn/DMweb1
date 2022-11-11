@@ -371,19 +371,6 @@ label {
     display: block;
     padding: 8px 0px 0px 0px;
 }
-.autre {
-    display: flex;
-    flex-direction: row;
-    background: var(--secondary-100);
-    border-radius: 10px;
-    padding: 24px;
-}
-.autre {
-    float: right;
-}
-.autre label {
-    padding: 0px 0px 0px 8px;
-}
 @media screen and (max-width: 830px) 
 {
     .contenu {
